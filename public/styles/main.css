@@ -1,0 +1,173 @@
+
+@font-face {
+  font-family: bold;
+  src: url('../images/bold\ font.ttf');
+}
+@font-face {
+  font-family: boldy;
+  src: url('../images/Fortnite.ttf');
+}
+
+#newPostBtn{
+  margin-right: 5vw;
+  margin-top:2em;
+  font-family: bold;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #A95AEC;
+  background-size:auto;
+  padding: 1em 2em 1em 2em;
+  float: right;
+}
+
+head1{
+font-size: 4em;
+font-family: bold;
+color: white;
+
+}
+
+.container{
+display: flex;
+flex-direction: column;
+gap: 10px;
+position: static;
+}
+ul{
+  display: flex;;
+  flex-direction: column;
+  gap: 10px;
+}
+.pl{
+  margin-left: 5vw;
+  background-color: rgb(255, 255, 255);
+  width: 70vw;
+  border:#A95AEC solid 3px;
+list-style: none;
+font-family: bold;
+font-size: 1em;
+
+
+}
+body {
+ background-image: url('../images/Screenshot\ 2023-11-10\ 125340.png');
+  color: #333;
+  line-height: 1.6;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+
+}
+
+.ent-main{
+position: absolute;
+left: 100%;
+bottom: 10%;
+}
+.ent{
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+gap: 1vw;
+top: 50%;
+margin-left: 2vw;
+left: 100%;
+}
+.edit{
+  display: block;
+
+  font-family: bold;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #A95AEC;
+  padding: 1em 2em 1em 2em;
+
+} 
+.mat{
+  padding: 2vw;
+  position: relative;
+}
+.pl:hover{
+  box-shadow: -5px 5px 0px #A95AEC ;
+  transition: .5s;
+margin-left: 6vw;
+margin-bottom: 1vw;
+overflow: visible;
+}
+a:hover{
+  box-shadow: -5px 5px 0px #ffffff ;
+  transition: .3s;
+overflow: visible;
+}
+form{
+display: flex;
+gap: 2vw;
+flex-direction: column  ;
+margin-left: 20%;
+margin-top: 2vw;
+}
+input{
+  flex: 0 0 auto;
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  border-bottom: #A95AEC solid 2px;
+font-size: 1.5em;
+color: #ffffff;
+  min-width: 30vw;
+  height: 4vw;
+background-color:black;
+caret-color: #8a03ff;
+font-family: bold;
+}
+textarea{
+  flex: 0 0 auto;
+  width: fit-content;
+  height: fit-content;
+  min-width: 50vw;
+  font-size: 1.5em;
+  background-color:black;
+caret-color: #8a03ff;
+border:#A95AEC solid 1px;
+color: #ffffff;
+font-family: bold;
+}button{
+  
+  flex: 0 0 auto;
+  width: fit-content;
+  height: fit-content;
+  background-color: #000000;
+}
+input:focus{
+  font-family: bold;
+  outline: none;
+  margin-left: calc(100% - 98%);
+  transition: .3s;
+}
+input::placeholder{
+  font-family: bold;
+  color:rgba(231, 210, 249, 0.45)   ;
+}
+input:focus::placeholder{font-family: bold;
+  color:#ffffff  ;
+}
+textarea:focus{
+  font-family: bold;
+  outline: none;
+  margin-left: calc(100% - 98%);
+  transition: .3s;
+}
+textarea::placeholder{
+  font-family: bold;
+  color:rgba(231, 210, 249, 0.45)   ;
+}
+textarea:focus::placeholder{
+  font-family: bold;
+  color:#ffffff  ;
+}
+button:hover{
+cursor: pointer;
+box-shadow: -5px 5px 0px #ffffff ;
+transition: .3s;
+overflow: visible;
+}

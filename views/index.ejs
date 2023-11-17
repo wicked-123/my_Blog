@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body style="display: flex;flex-direction: column;gap: 10px;">
+  <div class="head">
+    <head1>My<nsap style="color: #A95AEC;"> Blog</nsap>
+    </head1>
+    <a id="newPostBtn" href="/new">New Post</a>
+  </div>
+  <div class="container">
+    <ul id="postsList">
+      <% posts.forEach(post=> { %>
+        <li class="pl">
+          <div class="mat">
+          <h2 style="color: #8100f2; font-size:2em;margin-top: .5em;">
+            <%=post.title%>
+          </h2>
+          <small style="color: rgba(0, 0, 0, 0.756);">
+            <%=post.date %>
+          </small>
+          <p style="color:black;">
+            <%=post.content%>
+          </p>
+          <small style="color:black;">By: <%=post.author%> </small>
+          <div class="ent-main">
+            <div class="ent">
+              <a class="edit" href="/edit/<%= post.id %>">Edit</a>
+              <a class="edit" href="/api/posts/delete/<%= post.id %>">Delete</a>
+            </div>
+          </div>
+          <% }); %>
+          </div>
+        </li>
+  </div>
+  </ul>
+
+
+
+
+
+</body>
+
+  <footer style="position: fixed;left: 90%;top: 95%; color: #ffffff92;font-family: boldy;">Dasari Vignan</footer>
+</html>

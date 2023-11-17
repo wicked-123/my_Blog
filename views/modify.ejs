@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Blog</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <head1 style="margin-left: 85%;font-size: 2.5em;text-shadow: -3px 3px 0px #A95AEC;">
+      <%= heading %>
+    </head1>
+
+    <% if (locals.post) { %>
+      <form id="editForm" method="post" action="/api/posts/<%=post.id%>">
+        <input type="text" name="title" value="<%=post.title%>">
+        <textarea name="content" rows="10"><%=post.content%></textarea>
+        <input type="text" name="author" value="<%=post.author %>">
+        <button class="edit" type="submit" style="border: none;font-size: 1.2em;">
+          <%= submit %>
+        </button>
+      </form>
+
+      <% } else {%>
+        <form id="newPostForm" method="post" action="/api/posts">
+          <input type="text" name="title" placeholder="Title" required>
+          <textarea name="content" placeholder="Content" required rows="10"></textarea>
+          <input type="text" name="author" placeholder="Author" required>
+          <button class="edit" type="submit" style="border: none;font-size: 1.2em;">
+            <%= submit %>
+          </button>
+        </form>
+        <% } %>
+
+  </div>
+</body>
+<footer style="position: fixed;left: 90%;top: 95%; color: #ffffff92;font-family: boldy;">Dasari Vignan</footer>
+
+</html>

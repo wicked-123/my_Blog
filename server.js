@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
-import multer from "multer";
+
 const app = express();
 const port = 3000;
 const API_URL = "http://localhost:4000";
